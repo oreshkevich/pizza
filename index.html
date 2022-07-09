@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <main class="main">
+    <div class="container">
+      <div class="cards">
+        <div class="card">
+          <h2 class="card-title">Pizza ordering terminal</h2>
+          <form class="form ">
+            <div class="select">
+              <label for="pizza-select">Pizzas:</label>
+              <select name="pizzas" id="pizza-select">
+                <option value="">--Please select an option--</option>
+                <option value="pepperoni">Pepperoni</option>
+                <option value="village">Village</option>
+                <option value="hawaiian">Hawaiian</option>
+                <option value="mushroom">Mushroom</option>
+              </select>
+            </div>
+            <div class="select">
+              <label for="size-select">Size:</label>
+              <select name="sizes" id="size-select">
+                <option value="">--Please select an option--</option>
+                <option value="21">21</option>
+                <option value="26">26</option>
+                <option value="31">31</option>
+                <option value="45">45</option>
+              </select>
+            </div>
+            <div class="select">
+              <label for="sauces-select">Sauces:</label>
+              <select name="sauces" id="sauces-select">
+                <option value="">--Please select an option--</option>
+                <option value="cheese">Cheese</option>
+                <option value="sweet-sour">Sweet and sour</option>
+                <option value="garlic">Garlic</option>
+                <option value="barbecue">Barbecue</option>
+              </select>
+            </div>
+            <div class="card-buttons">
+              <button type="submit" class="button button-primary button-add-cart">
+                <span class="button-card-text">Order</span>
+              </button>
+              <strong> <span class="card-price-bold"></span> ₽</strong>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="pizza-cards"></div>
+    </div>
+  </main>
+  <script src="./main.js"></script>
+</body>
+
+</html>
