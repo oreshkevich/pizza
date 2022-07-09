@@ -64,7 +64,7 @@ form.addEventListener('submit', (event) => {
   }
   formData.pricePizza = pricePizza;
   if (emptyField) {
-    alert('Заполнены не все поля формы!');
+    alert('Not all fields are filled in!');
   } else {
     fetch(formUrl, {
       method: 'POST',
@@ -109,10 +109,10 @@ const renderGoods = (goods) => {
       `
     <div class="card order">
               <h2>Your order</h2>
-              <p> Пиццы: ${pizzas}</p>
-              <p> Соусы:  ${sauces}</p>
-              <p> Размер: ${sizes}</p>
-              <p>Цена:${pricePizza}</p>
+              <p> Pizzas: ${pizzas}</p>
+              <p> Sauces:  ${sauces}</p>
+              <p> Sizes: ${sizes}</p>
+              <p> Price:${pricePizza}</p>
             </a>
           </div>
     `
